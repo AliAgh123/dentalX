@@ -1,0 +1,243 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/* 6.4 Footer Style 4
+/*----------------------------------------*/
+
+.vl-footer-bg-4{
+    background: var(--vkl-bg-bg-7);
+}
+
+.vl-footer-margin-top-minus{
+    margin-top: -168px;
+}
+
+
+.vl-footer-4{  
+    & .vl-footer-widget-1{
+        & .vl-footer-content{
+            & p{
+                color:var(--vkl-text-text-23);
+                font-size: var(--vkl-font-size-font-s18);
+                line-height: var(--vkl-specing-height26);
+                font-weight: var(--vkl-weight-medium);
+            }
+        }
+        & .vl-footer-social{
+            ul{
+                li{
+                    display: inline-block;
+                }
+                a{
+                    height: 36px;
+                    width: 36px;
+                    background: var(--vkl-text-text-26);
+                    color: var(--vkl-text-text-22);
+                    display: block;
+                    line-height: 36px;
+                    text-align: center;
+                    border-radius: 50px;
+                    margin-right: 7px;
+                    transition: .3s;
+                    overflow: hidden;
+                    font-size: 16px;
+                    position: relative;
+                    z-index: 1;
+                    border: transparent;
+                    &:hover{
+                        background: var(--vkl-text-text-20);
+                        color: var(--vkl-text-text-1);
+                        transition: .3s;
+                    }
+                }
+            }
+        }
+    }
+    
+    & .vl-footer-widget-2{
+        & .vl-footer-widget-title{
+            color: var(--vkl-text-text-22);
+            font-size: var(--vkl-font-size-font-s22);
+            line-height: var(--vkl-specing-height22);
+            font-weight: var(--vkl-weight-semibold);
+        }
+        & .vl-footer-menu{
+            & ul{
+                & li{
+                    & a{
+                        color: var(--vkl-text-text-23);
+                        font-size: var(--vkl-font-size-font-s18);
+                        line-height: var(--vkl-specing-height18);
+                        font-weight: var(--vkl-weight-medium);
+                        transition: .3s;
+                        &:hover{
+                            color: var(--vkl-text-text-20);
+                            transition: .3s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    & .vl-footer-widget-3{
+        & .vl-footer-widget-title{
+            color: var(--vkl-text-text-22);
+            font-size: var(--vkl-font-size-font-s22);
+            line-height: var(--vkl-specing-height22);
+            font-weight: var(--vkl-weight-semibold);
+        }
+        & .vl-footer-menu{
+            & ul{
+                & li{
+                    & a{
+                        color: var(--vkl-text-text-23);
+                        font-size: var(--vkl-font-size-font-s18);
+                        line-height: var(--vkl-specing-height18);
+                        font-weight: var(--vkl-weight-medium);
+                        transition: .3s;
+                        &:hover{
+                            color: var(--vkl-text-text-20);
+                            transition: .3s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .vl-footer-widget-4{
+        & .vl-footer-widget-title{
+            color: var(--vkl-text-text-22);
+            font-size: var(--vkl-font-size-font-s22);
+            line-height: var(--vkl-specing-height22);
+            font-weight: var(--vkl-weight-semibold);
+        }
+        & .vl-newslater-form{
+            input[type="email"]{
+                background: transparent;
+                border: 1px solid #ACBCB8;
+                border-radius: 8px;
+                color: var(--vkl-text-text-23);
+                font-size: var(--vkl-font-size-font-s18);
+                line-height: var(--vkl-specing-height18);
+                font-weight: var(--vkl-weight-medium);
+                height: 50px;
+                &::placeholder{
+                    color: var(--vkl-text-text-23);
+                    font-size: var(--vkl-font-size-font-s18);
+                    line-height: var(--vkl-specing-height18);
+                    font-weight: var(--vkl-weight-medium);
+                    transition: .3s;
+                }
+            }
+            & .newslater-btn2{
+                display: inline-block;
+                background: var(--vkl-text-text-6);
+                color: var(--vkl-text-text-1);
+                text-transform: uppercase;
+                transition: .3s;
+                font-size: var(--vkl-font-size-font-s18);
+                line-height: var(--vkl-specing-height18);
+                font-weight: var(--vkl-weight-bold);
+                border-radius: 25px;
+                padding: 6px 8px 6px 16px;
+                position: relative;
+                z-index: 1;
+                & span{
+                    display: inline-block;
+                    height: 36px;
+                    width: 36px;
+                    background: var(--vkl-text-text-1);
+                    color: var(--vkl-text-text-6);
+                    line-height: 36px;
+                    border-radius: 50px;
+                    transform: rotate(-45deg);
+                    transition: .3s;
+                    margin-left: 8px;
+                }
+                &::after{
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    top: 0;
+                    height: 100%;
+                    width: 0%;
+                    background: var(--vkl-text-theme-color-2);
+                    border-radius: 25px;
+                    z-index: -1;
+                    transition: .3s;
+                }
+                &:hover{
+                    color: var(--vkl-text-text-6);
+                    transition: .3s;
+                    & span{
+                        background: var(--vkl-text-text-6);
+                        color: var(--vkl-text-text-1);
+                        transition: .3s;
+                        transform: rotate(0);
+                    }
+                    &::after{
+                        width: 100%;
+                        transition: .3s;
+                    }
+                }
+            }
+        }
+    }
+    & .vl-footer-copyright-text-4{
+        border-top: 1px solid #D8E0E0;
+        margin-top: 18px;
+        & .para{
+            color: var(--vkl-text-text-23);
+            font-size: var(--vkl-font-size-font-s18);
+            line-height: var(--vkl-specing-height18);
+            font-weight: var(--vkl-weight-medium);
+            padding-top: 24px;
+            padding-bottom: 32px;
+            @media #{$xs}{
+                padding-bottom: 0;
+            }
+        }
+        & .copy-right-menu{
+            text-align: end;
+            @media #{$xs}{
+                text-align: center;
+            }
+            & ul{
+                & li{
+                    display: inline-block;
+                    padding-top: 24px;
+                    padding-bottom: 32px;
+                    &::after{
+                        position: absolute;
+                        content: "";
+                        height: 24px;
+                        width: 1px;
+                        background: #525456;
+                        margin-left: 16px;
+                    }
+                    & a{
+                        color: var(--vkl-text-text-23);
+                        font-size: var(--vkl-font-size-font-s18);
+                        line-height: var(--vkl-specing-height18);
+                        font-weight: var(--vkl-weight-medium);
+                        position: relative;
+                        z-index: 1;
+                        padding-left: 16px;
+                        margin-left: 16px;
+                        transition: .3s;
+                        &:hover{
+                            color: var(--vkl-text-text-20) !important;
+                            transition: .3s;
+                        }
+                    }
+                    &:last-child{
+                        &::after{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

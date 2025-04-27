@@ -1,0 +1,115 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  1.2 Common Classes
+/*----------------------------------------*/
+
+
+p{
+	@media #{$md,$xs}{
+		br{
+			display: none;
+		}
+	}
+}
+
+
+.w-img{
+	& img{
+		width: 100%;
+	}
+}
+.m-img{
+	& img{
+		max-width: 100%;
+	}
+}
+
+.fix {
+    overflow:hidden
+}
+.clear{
+    clear: both;
+}
+
+.z-index-1{
+	z-index: 1;
+}
+
+.z-index-11{
+	z-index: 11;
+}
+
+.overflow-y-visible{
+	overflow-x: hidden;
+	overflow-y: visible;
+}
+.overflow-x-visible{
+	overflow-x: visible;
+	overflow-y: hidden;
+}
+
+.p-relative{
+	position: relative;
+}
+.p-absolute{
+	position: absolute;
+}
+
+.vl-fs{
+	&-15{
+		font-size: 15px;
+	}
+	&-20{
+		font-size: 20px;
+	}
+	&-24{
+		font-size: 24px;
+	}
+	&-30{
+		font-size: 30px;
+		@media #{$xs}{
+			font-size: 22px;
+		}
+	}
+	&-40{
+		font-size: 40px;
+		@media #{$lg}{
+			font-size: 32px;
+		}
+	}
+}
+
+.br{
+	&-8{
+		border-radius: 8px;
+	}
+	&-30{
+		border-radius: 30px;
+	}
+}
+
+.h-400{
+	height: 400px !important;
+}
+
+
+.vl-off-white-bg{
+	background-color: var(--vkl-bg-bg-2);
+}
+.vl-white-bg{
+	background: var(--vkl-text-text-1);
+}
+.vl-white{
+	color: var(--vkl-text-text-1);
+}
+.vl-comon-black-bg{
+	background: var(--vkl-text-text-2);
+}
+
+
+.vl{
+	&-medium{
+		font-weight: 500;
+	}
+}

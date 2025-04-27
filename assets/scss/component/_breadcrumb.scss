@@ -1,0 +1,60 @@
+@use '../utils' as *;
+/*----------------------------------------*/
+/*  2.6 Breadcrumb
+/*----------------------------------------*/
+
+.vl-breadcrumb-area{
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 210px;
+    padding-bottom: 100px;
+    @media #{$md,$xs}{
+        padding-top: 180px;
+        padding-bottom: 90px;
+    }
+    &::after{
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(14, 55, 74, 0.65);
+        z-index: -1;
+    }
+}
+
+
+.vl-breadcrumb-content{
+    & .title{
+        color: var(--vkl-text-text-1);
+        font-size: var(--vkl-font-size-font-s64);
+        line-height: var(--vkl-specing-height64);
+        font-weight: var(--vkl-weight-semibold);
+        padding-bottom: 24px;
+        @media #{$xs}{
+            font-size: var(--vkl-font-size-font-s40);
+            line-height: var(--vkl-specing-height50);
+        }
+    }
+    & .vl-breadcrumb-list{
+        & ul{
+            & li{
+                display: inline-block;
+                & a{
+                    display: block;
+                    color: var(--vkl-text-text-1);
+                    font-size: var(--vkl-font-size-font-s20);
+                    line-height: var(--vkl-specing-height20);
+                    font-weight: 400;
+                    &.active{
+                        font-weight: var(--vkl-weight-semibold);
+                    }
+                }
+            }
+        }
+    }
+}

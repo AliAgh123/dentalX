@@ -1,0 +1,296 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  2.2 Buttons
+/*----------------------------------------*/
+
+.vl-btn{
+    background: var(--vkl-text-text-1);
+    padding: 16px 45px;
+    font-size: 18px;
+    font-family: var(--vl-fonts-figtree);
+    border-radius: 8px;
+    display: inline-block;
+    color: #fff;
+    position: relative;
+    overflow: hidden; 
+    &:hover{
+        & .vl-btn-y-1{
+            transform: translateY(-100%);
+        }
+        & .vl-btn-y-2{
+            transform: translateY(0);
+        }
+        color: #fff;
+    }
+    &-sec{ 
+        background: var(--vkl-text-text-10);
+        padding: 16px 24px;
+        font-size: 18px;
+        font-family: var( --vl-fonts-figtree);
+        border-radius: 8px;
+        display: inline-block;
+        position: relative;
+        &:hover{
+            & .vl-btn-y-1{
+                transform: translateY(-100%);
+            }
+            & .vl-btn-y-2{
+                transform: translateY(0);
+            }
+        }
+    }
+        &:hover{
+            background: var(--vl-theme-color);
+            color: #fff;
+            border-color: var(--vl-theme-color);
+            opacity: 1;
+        }
+
+    &-wrap{
+        position: relative;
+        overflow: hidden;
+        display: block;
+        color: #fff;
+        font-weight: 700;
+        text-transform: uppercase;
+        & span{
+            transition: .3s;
+            display: block;
+        }
+    }
+   
+    &-y-2{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        transform: translateY(100%);
+    }
+
+}
+
+// btn style 
+.vl-btn-primary{
+    background: var(--vkl-text-theme-color-1);
+    border-radius: 8px;
+    text-transform: uppercase;
+    padding: 18px 22px;
+    display: inline-block;
+    color: var(--vkl-text-text-1);
+    font-size: var(--vkl-font-size-font-s18);
+    line-height: var(--vkl-specing-height18);
+    font-weight: var(--vkl-weight-bold);
+    transition: .3s;
+    &:hover{
+        background: var(--vkl-text-text-2);
+        transition: .3s;
+        color: var(--vkl-text-text-1);
+    }
+}
+
+.vl-before-btn{
+    & .vl-btn-primary{
+        &:hover{
+            color: var(--vkl-text-theme-color-1);
+            background: var(--vkl-text-text-1);
+        }
+    }
+}
+
+// Btn Style Home 2
+.btn-primary2{
+    background: var(--vkl-text-theme-color-2);
+    text-transform: uppercase;
+    display: inline-block;
+    border-radius: 25px;
+    padding: 6px 8px 6px 16px;
+    color: var(--vkl-text-text-6);
+    font-size: var(--vkl-font-size-font-s18);
+    line-height: var(--vkl-specing-height18);
+    font-weight: var(--vkl-weight-bold);
+    transition: .3s;
+    position: relative;
+    z-index: 1;
+    & span{
+        background: var(--vkl-text-text-6);
+        display: inline-block;
+        height: 36px;
+        width: 36px;
+        border-radius: 50px;
+        line-height: 36px;
+        text-align: center;
+        color: var(--vkl-text-theme-color-2);
+        transition: .3s;
+        transform: rotate(-45deg);
+    }
+    &::after{
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 0%;
+        background: var(--vkl-text-text-6);
+        z-index: -1;
+        border-radius: 25px;
+        transition: .3s;
+    }
+    &:hover{
+        color: var(--vkl-text-text-1);
+        transition: .3s;
+        & span{
+            background: var(--vkl-text-theme-color-2);
+            color: var(--vkl-text-text-6);
+            transition: .3s;
+            transform: rotate(0);
+        }
+        &::after{
+            width: 100%;
+            transition: .3s;
+        }
+    }
+}
+
+// Btn style Home 3
+.vl-btn-primary3{
+    background: var(--vkl-text-text-1);
+    color: var(--vkl-text-text-17);
+    text-transform: uppercase;
+    border-radius: 8px;
+    padding: 17px 24px 17px 20px;
+    font-size: var(--vkl-font-size-font-s18);
+    line-height: var(--vkl-specing-height18);
+    font-weight: var(--vkl-weight-bold);
+    display: inline-block;
+    transition: .3s;
+    & span{
+        transform: rotate(-45deg);
+        transition: .3s;
+        display: inline-block;
+    }
+}
+
+
+.btn-primary3{
+    background: var(--vkl-text-theme-color-1);
+    border-radius: 8px;
+    display: inline-block;
+    color: var(--vkl-text-text-1);
+    text-transform: uppercase;
+    font-size: var(--vkl-font-size-font-s18);
+    line-height: var(--vkl-specing-height18);
+    font-weight: var(--vkl-weight-bold);
+    padding: 16px 20px 16px 24px;
+    transition: .3s;
+    position: relative;
+    z-index: 1;
+    &::after{
+        position: absolute;
+        content: "";
+        background: #4DA9D5;
+        height: 40px;
+        width: 40px;
+        border-radius: 50px;
+        z-index: -1;
+        top: 6px;
+        left: 7px;
+        transition: .3s;
+    }
+    &:hover{
+        color: var(--vkl-text-text-1);
+        transition: .3s;
+        &::after{
+            width: 100%;
+            transition: .3s;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            border-radius: 8px;
+        }
+        & span{
+            transform: rotate(0);
+            transition: .3s;
+        }
+    }
+    & span{
+        display: inline-block;
+        transform: rotate(-45deg);
+        transition: .3s;
+    }
+}
+
+.vl-appoint-btn{
+    & .btn-primary3{
+        background: var(--vkl-text-theme-color-1);
+        border-radius: 8px;
+        display: inline-block;
+        color: var(--vkl-text-text-1);
+        text-transform: uppercase;
+        font-size: var(--vkl-font-size-font-s18);
+        line-height: var(--vkl-specing-height18);
+        font-weight: var(--vkl-weight-bold);
+        padding: 16px 20px 16px 24px;
+        transition: .3s;
+        position: relative;
+        z-index: 1;
+        &::after{
+            position: absolute;
+            content: "";
+            background: #4DA9D5;
+            height: 40px;
+            width: 40px;
+            border-radius: 50px;
+            z-index: -1;
+            top: 6px;
+            left: 70px;
+            transition: .3s;
+        }
+        &:hover{
+            color: var(--vkl-text-text-1);
+            transition: .3s;
+            &::after{
+                width: 100%;
+                transition: .3s;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                border-radius: 8px;
+            }
+            & span{
+                transform: rotate(0);
+                transition: .3s;
+            }
+        }
+        & span{
+            display: inline-block;
+            transform: rotate(-45deg);
+            transition: .3s;
+        }
+    }
+    
+}
+
+
+// btn style Home 4
+
+// btn style 
+.vl-btn-primar4y{
+    background: var(--vkl-text-text-20);
+    border-radius: 8px;
+    text-transform: uppercase;
+    padding: 18px 22px;
+    display: inline-block;
+    color: var(--vkl-text-text-1);
+    font-size: var(--vkl-font-size-font-s18);
+    line-height: var(--vkl-specing-height18);
+    font-weight: var(--vkl-weight-bold);
+    transition: .3s;
+    &:hover{
+        background: var(--vkl-text-text-22);
+        transition: .3s;
+        color: var(--vkl-text-text-1);
+    }
+}

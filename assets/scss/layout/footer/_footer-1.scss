@@ -1,0 +1,437 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  6.1 Footer Style 1
+/*----------------------------------------*/
+
+.vl-footer{
+    &-content{
+        p {
+            color:var(--vkl-text-text-3);
+            font-size: var(--vkl-font-size-font-s18);
+            line-height: var(--vkl-specing-height26);
+            font-weight: var(--vkl-weight-medium);
+        }
+    }
+    &-social{
+        ul{
+            li{
+                display: inline-block;
+            }
+            a{
+                height: 36px;
+                width: 36px;
+                border: 1px solid var(--vkl-text-theme-color-1);
+                color: var(--vkl-text-theme-color-1);
+                display: block;
+                line-height: 36px;
+                text-align: center;
+                border-radius: 50px;
+                margin-right: 7px;
+                transition: .3s;
+                overflow: hidden;
+                font-size: 16px;
+                position: relative;
+                z-index: 1;
+                &:hover{
+                    background: var(--vkl-text-theme-color-1);
+                    color: var(--vkl-text-text-1);
+                    transition: .3s;
+                }
+            }
+            
+        }
+    }
+    &-widget{
+        &-title{
+            line-height: 28px;
+            color: var(--vkl-text-text-2);
+            font-size: var(--vkl-font-size-font-s22);
+            line-height: var(--vkl-specing-height22);
+            font-weight: var(--vkl-weight-semibold);
+        }
+        &-3{
+            &.ml-40 {
+                @media #{$md,$xs}{
+                    margin-left: 0px;
+                }
+            }
+        }
+
+        &-4{
+            margin-left: 120px;
+            @media #{$md,$xs}{
+                margin-left: 0;
+            }
+            p{
+                color: #fff;
+                opacity: .8;
+                font-size: 18px;
+                line-height: 26px;
+            }
+        }
+    }
+    &-menu{
+        & ul{
+            & li{
+                margin-bottom: 24px;
+                & a{
+                    color:var(--vkl-text-text-3);
+                    transition: .3s;
+                    display: block;
+                    font-size: var(--vkl-font-size-font-s18);
+                    line-height: var(--vkl-specing-height18);
+                    font-weight: var(--vkl-weight-medium);
+                    &:hover{
+                        color: var(--vkl-text-theme-color-1);
+                        opacity: 1;
+                        transition: .3s;
+                    }
+                }
+            }
+        }
+    }
+    &-newsletter{
+        & {
+            input[type=email] {
+            border-radius: 4px;
+            }
+        }
+        &-btn{
+            & .vl-btn-sec{
+                width: 100%;
+                text-align:center;
+            }
+        }
+    }
+    
+    &-copyright{
+        &-text{
+            padding: 24px 0;
+            margin: 0;
+            border-top: 1px solid #D9E2E5;
+            & .para{
+                color: var(--vkl-text-text-3);
+                font-size: var(--vkl-font-size-font-s18);
+                line-height: var(--vkl-specing-height18);
+                font-weight: var(--vkl-weight-medium);
+                @media #{$xs}{
+                    text-align: center;
+                }
+            }
+            & .copy-right-menu{
+                text-align: end;
+
+                @media #{$xs}{
+                    text-align: center;
+                    margin-top: 20px;
+                }
+                & ul{
+                    & li{
+                        display: inline-block;
+                        position: relative;
+                        z-index: 1;
+                        margin-right: 16px;
+                        padding-right: 16px;
+                        @media #{$md}{
+                            margin-right: 14px;
+                            padding-right: 14px;
+                        }
+                        & a{
+                            color: var(--vkl-text-text-3);
+                            font-size: var(--vkl-font-size-font-s18);
+                            line-height: var(--vkl-specing-height18);
+                            font-weight: var(--vkl-weight-medium);
+                            transition: .3s;
+                            &:hover{
+                                color: var(--vkl-text-theme-color-1);
+                                transition: .3s;
+                            }
+                        }
+                        &::after{
+                            position: absolute;
+                            content: "";
+                            left: -16px;
+                            top: 3px;
+                            height: 18px;
+                            width: 2px;
+                            background: var(--vkl-text-text-3);
+                            @media #{$md}{
+                                left: -14px;
+                            }
+                        }
+                        &:first-child{
+                            &::after{
+                                display: none;
+                            }
+                        }
+                        &:last-child{
+                            margin-right: 0;
+                            padding-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// Footer icon List (Home-1)
+.vl-footer-icon-list{
+    & ul{
+        & li{
+            margin-bottom: 18px;
+            & a{
+                color: var(--vkl-text-text-3);
+                font-size: var(--vkl-font-size-font-s16);
+                line-height: var(--vkl-specing-height16);
+                font-weight: var(--vkl-weight-medium);
+                transition: .3s;
+                &:hover{
+                    color: var(--vkl-text-theme-color-1);
+                    transition: .3s;
+                }
+            }
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.vl-footer-margin-top-minus{
+    margin-top: -168px;
+}
+
+// Footer Style 3
+.vl-footer-bg-3{
+    background: var(--vkl-bg-bg-6);
+}
+
+// footer widget 1 (Home-3)
+.vl-footer-widge3t-1{
+    & .vl-footer-content{
+        & .para{
+            color: var(--vkl-text-text-18);
+            font-size: var(--vkl-font-size-font-s18);
+            line-height: var(--vkl-specing-height26);
+            font-weight: var(--vkl-weight-medium);
+        }
+    }
+    & .vl-footer-social{
+        ul{
+            li{
+                display: inline-block;
+            }
+            a{
+                height: 36px;
+                width: 36px;
+                background: #E1EEF5;
+                border: transparent;
+                color: var(--vkl-text-theme-color-1);
+                display: block;
+                line-height: 36px;
+                text-align: center;
+                border-radius: 50px;
+                margin-right: 7px;
+                transition: .3s;
+                overflow: hidden;
+                font-size: 16px;
+                position: relative;
+                z-index: 1;
+                &:hover{
+                    background: var(--vkl-text-theme-color-1);
+                    color: var(--vkl-text-text-1);
+                    transition: .3s;
+                }
+            }
+            
+        }
+    }
+}
+// footer widget 2 (Home-3)
+.vl-footer-widge3t-2{
+    & .vl-footer-widget-title{
+        line-height: 28px;
+        color: var(--vkl-text-text-17);
+        font-size: var(--vkl-font-size-font-s22);
+        line-height: var(--vkl-specing-height22);
+        font-weight: var(--vkl-weight-semibold);
+    }
+    & .vl-footer-menu{
+        & ul{
+            & li{
+                margin-bottom: 24px;
+                & a{
+                    color: var(--vkl-text-text-18);
+                    transition: .3s;
+                    display: block;
+                    font-size: var(--vkl-font-size-font-s18);
+                    line-height: var(--vkl-specing-height18);
+                    font-weight: var(--vkl-weight-medium);
+                    &:hover{
+                        color: var(--vkl-text-theme-color-1);
+                        transition: .3s;
+                    }
+                }
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+// footer widget 3 (Home-3)
+.vl-footer-widge3t-3{
+    & .vl-footer-widget-title{
+        line-height: 28px;
+        color: var(--vkl-text-text-17);
+        font-size: var(--vkl-font-size-font-s22);
+        line-height: var(--vkl-specing-height22);
+        font-weight: var(--vkl-weight-semibold);
+    }
+    & .vl-footer-menu{
+        & ul{
+            & li{
+                margin-bottom: 24px;
+                & a{
+                    color: var(--vkl-text-text-18);
+                    transition: .3s;
+                    display: block;
+                    font-size: var(--vkl-font-size-font-s18);
+                    line-height: var(--vkl-specing-height18);
+                    font-weight: var(--vkl-weight-medium);
+                    &:hover{
+                        color: var(--vkl-text-theme-color-1);
+                        transition: .3s;
+                    }
+                }
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+// footer widget 4 (Home-3)
+.vl-footer-widge4t-4{
+    margin-left: 120px;
+    @media #{$md,$xs}{
+        margin-left: 0;
+    }
+    & .vl-footer-widget-title{
+        line-height: 28px;
+        color: var(--vkl-text-text-17);
+        font-size: var(--vkl-font-size-font-s22);
+        line-height: var(--vkl-specing-height22);
+        font-weight: var(--vkl-weight-semibold);
+    }
+    & .vl-footer-icon-list{
+        & ul{
+            & li{
+                margin-bottom: 18px;
+                & a{
+                    color: var(--vkl-text-text-18);
+                    font-size: var(--vkl-font-size-font-s16);
+                    line-height: var(--vkl-specing-height16);
+                    font-weight: var(--vkl-weight-medium);
+                    transition: .3s;
+                    &:hover{
+                        color: var(--vkl-text-theme-color-1);
+                        transition: .3s;
+                    }
+                }
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+// footer copyright widget 5 (Home-3)
+.vl-footer-copyright-tex4t {
+    padding: 24px 0;
+    margin: 0;
+    border-top: 1px solid #E0E2E4;
+    & .para{
+        color: var(--vkl-text-text-18);
+        font-size: var(--vkl-font-size-font-s18);
+        line-height: var(--vkl-specing-height18);
+        font-weight: var(--vkl-weight-medium);
+        @media #{$xs}{
+            padding-bottom: 20px;
+        }
+    }
+}
+.copy-right-men4u{
+    text-align: end;
+    & ul{
+        & li{
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            margin-right: 16px;
+            padding-right: 16px;
+            & a{
+                color: var(--vkl-text-text-18);
+                font-size: var(--vkl-font-size-font-s18);
+                line-height: var(--vkl-specing-height18);
+                font-weight: var(--vkl-weight-medium);
+                transition: .3s;
+                @media #{$md}{
+                    margin-left: 14px;
+                    padding-left: 14px;
+                }
+                &:hover{
+                    color: var(--vkl-text-theme-color-1);
+                    transition: .3s;
+                }
+            }
+            &::after{
+                position: absolute;
+                content: "";
+                left: -16px;
+                top: 3px;
+                height: 18px;
+                width: 2px;
+                background: var(--vkl-text-text-18);
+            }
+            &:first-child{
+                &::after{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.vl-footer-socia4l{
+    ul{
+        li{
+            display: inline-block;
+        }
+        a{
+            height: 36px;
+            width: 36px;
+            border: transparent;
+            background: var(--vkl-text-text-26);
+            color: var(--vkl-text-text-20);
+            display: block;
+            line-height: 36px;
+            text-align: center;
+            border-radius: 50px;
+            margin-right: 7px;
+            transition: .3s;
+            overflow: hidden;
+            font-size: 16px;
+            position: relative;
+            z-index: 1;
+            &:hover{
+                background: var(--vkl-text-text-22);
+                color: var(--vkl-text-text-1);
+                transition: .3s;
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,29 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  2.11 Brand
+/*----------------------------------------*/
+
+.vl-brand-area-inner{
+    background: var(--vkl-text-theme-color-1);
+}
+
+.vl-brand-iner-title{
+    & .title{
+        text-transform: uppercase;
+        color: var(--vkl-text-text-1);
+        font-size: var(--vkl-font-size-font-s20);
+        line-height: var(--vkl-specing-height28);
+        font-weight: var(--vkl-weight-semibold);
+        @media #{$xs}{
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.vl-single-brand-item {
+    width: 220px;
+    & img{
+        object-fit: cover;
+    }
+}

@@ -1,0 +1,368 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  7.7 Portfolio css
+/*----------------------------------------*/
+
+// before / after section 
+
+.vl-before-bg{
+  background: var(--vkl-text-text-4);
+}
+
+.vl-before-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media #{$xs}{
+    display: block;
+  }
+}
+.vl-before-btn{
+  @media #{$xs}{
+    margin-bottom: 15px;
+  }
+}
+
+
+.vl-before-content-wraper{
+  & .vl-section-title{
+    & .subtitle{
+      background: var(--vkl-text-text-10);
+      color: var(--vkl-text-text-1);
+    }
+    & .title{
+      color: var(--vkl-text-text-1);
+    }
+  }
+}
+
+
+
+
+// Before Section Home-3
+.vl-before-bg-3{
+  background: var(--vkl-text-theme-color-1);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.vl-before-content-wraper3{
+  & .vl-section-title3{
+    & .subtitle{
+      background: #3A9DCF;
+      color: var(--vkl-text-text-1);
+    }
+    & .title{
+      color: var(--vkl-text-text-1);
+      transition: .3s;
+    }
+  }
+}
+
+.vl-before-btn3{
+  & .btn-primary3{
+    background: var(--vkl-text-text-1);
+    color: var(--vkl-text-text-17);
+    transition: .3s;
+    &::after {
+      position: absolute;
+      content: "";
+      background: #E9F4FA;
+      height: 40px;
+      width: 40px;
+      border-radius: 50px;
+      z-index: -1;
+      top: 6px;
+      left: 7px;
+      transition: .3s;
+    }
+    &:hover{
+      &::after{
+        width: 100%;
+        border-radius: inherit;
+        transition: .3s;
+        left: 0;
+        top: 0;
+        height: 100%;
+      }
+      & span{
+        transition: .3s;
+        transform: rotate(0);
+      }
+    }
+  }
+}
+
+.vl-before-btn3 {
+  @media #{$xs}{
+    margin-bottom: 30px;
+  }
+}
+
+
+// work css area (Home-4)
+.vl-work-icon-bo4x{
+  text-align: center;
+  & .icon{
+    margin-bottom: 50px;
+    & span{
+      background: var(--vkl-bg-bg-7);
+      transition: .3s;
+      height: 90px;
+      width: 90px;
+      line-height: 90px;
+      border-radius: 50px;
+      display: inline-block;
+      & img{
+        transition: .3s;
+      }
+    }
+    & .number{
+      background: var(--vkl-text-text-1);
+      height: 32px;
+      width: 32px;
+      border-radius: 50px;
+      display: block;
+      color: var(--vkl-text-text-22);
+      font-size: var(--vkl-font-size-font-s20);
+      line-height: var(--vkl-specing-height32);
+      font-weight: var(--vkl-weight-medium);
+      transition: .3s;
+      fill: #FFF;
+      box-shadow:(0px 4px 30px rgba(0, 0, 0, 0.08));
+      margin: 0 auto;
+      margin-top: -5px;
+      position: relative;
+      z-index: 1;
+    }
+  }
+  & .content{
+    background: var(--vkl-bg-bg-7);
+    border-radius: 4px;
+    padding: 32px 24px;
+    transition: .3s;
+    position: relative;
+    @media #{$md,$xs}{
+      padding: 20px;
+    }
+    & .title{
+      color: var(--vkl-text-text-22);
+      font-size: var(--vkl-font-size-font-s24);
+      line-height: var(--vkl-specing-height24);
+      font-weight: var(--vkl-weight-semibold);
+      transition: .3s;
+      @media #{$md,$xs}{
+        font-size: var(--vkl-font-size-font-s20);
+        line-height: var(--vkl-specing-height20);
+      }
+    }
+    & .para{
+      color: var(--vkl-text-text-23);
+      font-size: var(--vkl-font-size-font-18);
+      line-height: var(--vkl-specing-height26);
+      font-weight: var(--vkl-weight-medium);
+      transition: .3s;
+      @media #{$md,$xs}{
+        font-size: var(--vkl-font-size-font-s18);
+        line-height: var(--vkl-specing-height26);
+      }
+    }
+    &::after{
+      position: absolute;
+      content: "";
+      left: 0;
+      right: 0;
+      top: -18px;
+      height: 60px;
+      width: 60px;
+      background: var(--vkl-bg-bg-7);
+      margin: 0 auto;
+      border-radius: 4px;
+      transform: rotate(45deg);
+      z-index: -1;
+      transition: .3s;
+    }
+  }
+  &:hover{
+      & .icon{
+        & span{
+          background: var(--vkl-text-text-20);
+          transition: .3s;
+          & img{
+            filter: brightness(0) invert(1);
+            transition: .3s;
+            transform: rotateY(180deg);
+          }
+        }
+        & .number{
+          background: var(--vkl-text-text-1);
+          color: var(--vkl-text-text-20);
+          transition: .3s;
+        }
+      }
+      & .content{
+        background: var(--vkl-text-text-20);
+        transition: .3s;
+        & .title{
+          color: var(--vkl-text-text-1);
+          transition: .3s;
+        }
+        & .para{
+          color: var(--vkl-text-text-24);
+          transition: .3s;
+        }
+        &::after{
+          background: var(--vkl-text-text-20);
+          transition: .3s;
+        }
+      }
+  }
+}
+
+
+// work inner page
+
+.vl-work-inner-content{
+  & .vl-section-title{
+    & .subtitle{
+      background: rgba(255, 255, 255, 0.10);
+      color: var(--vkl-text-text-1);
+    }
+    & .title{
+      color: var(--vkl-text-text-1);
+    }
+  }
+}
+
+.vl-work-icon-bo4x-inner{
+  text-align: center;
+  & .icon{
+    margin-bottom: 50px;
+    & span{
+      background: var(--vkl-bg-bg-2);
+      transition: .3s;
+      height: 90px;
+      width: 90px;
+      line-height: 90px;
+      border-radius: 50px;
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      &::before{
+        position: absolute;
+        content: "";
+        height: 110px;
+        width: 110px;
+        border: 1px solid #274B5B;
+        border-radius: 50%;
+        left: -10px;
+        margin: 0 auto;
+        text-align: center;
+        top: -10px;
+      }
+      & img{
+        transition: .3s;
+      }
+    }
+    & .number{
+      background: var(--vkl-text-text-1);
+      height: 32px;
+      width: 32px;
+      border-radius: 50px;
+      display: block;
+      color: var(--vkl-text-text-2);
+      font-size: var(--vkl-font-size-font-s20);
+      line-height: var(--vkl-specing-height32);
+      font-weight: var(--vkl-weight-bold);
+      transition: .3s;
+      fill: #FFF;
+      box-shadow:(0px 4px 30px rgba(0, 0, 0, 0.08));
+      margin: 0 auto;
+      margin-top: -5px;
+      position: relative;
+      z-index: 1;
+    }
+  }
+  & .content{
+    background: var(--vkl-bg-bg-2);
+    border-radius: 4px;
+    padding: 32px 24px;
+    transition: .3s;
+    position: relative;
+    @media #{$md,$xs}{
+      padding: 20px;
+    }
+    & .title{
+      color: var(--vkl-text-text-2);
+      font-size: var(--vkl-font-size-font-s24);
+      line-height: var(--vkl-specing-height24);
+      font-weight: var(--vkl-weight-semibold);
+      transition: .3s;
+      @media #{$md,$xs}{
+        font-size: var(--vkl-font-size-font-s20);
+        line-height: var(--vkl-specing-height20);
+      }
+    }
+    & .para{
+      color: var(--vkl-text-text-3);
+      font-size: var(--vkl-font-size-font-18);
+      line-height: var(--vkl-specing-height26);
+      font-weight: var(--vkl-weight-medium);
+      transition: .3s;
+      @media #{$md,$xs}{
+        font-size: var(--vkl-font-size-font-s18);
+        line-height: var(--vkl-specing-height26);
+      }
+    }
+    &::after{
+      position: absolute;
+      content: "";
+      left: 0;
+      right: 0;
+      top: -18px;
+      height: 60px;
+      width: 60px;
+      background: var(--vkl-bg-bg-2);
+      margin: 0 auto;
+      border-radius: 4px;
+      transform: rotate(45deg);
+      z-index: -1;
+      transition: .3s;
+    }
+  }
+  &:hover{
+      & .icon{
+        & span{
+          background: var(--vkl-text-theme-color-1);
+          transition: .3s;
+          & img{
+            filter: brightness(0) invert(1);
+            transition: .3s;
+            transform: rotateY(180deg);
+          }
+        }
+        & .number{
+          background: var(--vkl-text-text-1);
+          color: var(--vkl-text-theme-color-1);
+          transition: .3s;
+        }
+      }
+      & .content{
+        background: var(--vkl-text-theme-color-1);
+        transition: .3s;
+        & .title{
+          color: var(--vkl-text-text-1);
+          transition: .3s;
+        }
+        & .para{
+          color: var(--vkl-text-text-24);
+          transition: .3s;
+        }
+        &::after{
+          background: var(--vkl-text-theme-color-1);
+          transition: .3s;
+        }
+      }
+  }
+}

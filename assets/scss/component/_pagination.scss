@@ -1,0 +1,35 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  2.4 Pagination
+/*----------------------------------------*/
+
+.vl-theme-pagination{
+    & ul{
+        & li{
+            display: inline-block;
+            margin-right: 10px;
+            &:last-child{
+                margin-right: 0;
+            }
+            & a{
+                background: var(--vkl-bg-bg-2);
+                color: var(--vkl-text-text-2);
+                display: block;
+                border-radius: 8px;
+                height: 50px;
+                width: 50px;
+                line-height: 50px;
+                text-align: center;
+                font-size: var(--vkl-font-size-font-s20);
+                font-weight: var(--vkl-weight-semibold);
+                transition: .3s;
+                &:hover{
+                    background: var(--vkl-text-theme-color-1);
+                    color: var(--vkl-text-text-1);
+                    transition: .3s;
+                }
+            }
+        }
+    }
+}

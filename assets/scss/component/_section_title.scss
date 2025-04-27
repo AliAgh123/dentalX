@@ -1,0 +1,143 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  2.9 Section Title
+/*----------------------------------------*/
+.vl-section-title{
+    & .subtitle{
+        color: var(--vkl-text-text-2);
+        background:var(--vkl-bg-bg-2);
+        border-radius: 8px;
+        display: inline-block;
+        text-transform: uppercase;
+        padding: 8px 14px;
+        font-size: var(--vkl-font-size-font-s18);
+        line-height: var(--vkl-specing-height18);
+        font-weight: var(--vkl-weight-semibold);
+    }
+    & .title{
+        color: var(--vkl-text-text-2);
+        font-size: var(--vkl-font-size-font-s44);
+        line-height: var(--vkl-specing-height54);
+        font-weight: var(--vkl-weight-semibold);
+        @media #{$md}{
+            font-size: var(--vkl-font-size-font-s30);
+            line-height: var(--vkl-specing-height40);
+        }
+        @media #{$xs}{
+            font-size: var(--vkl-font-size-font-s30);
+            line-height: var(--vkl-specing-height38);
+        }
+    }
+    & .para{
+        color: var(--vkl-text-text-3);
+        font-size: var(--vkl-font-size-font-s18);
+        line-height: var(--vkl-specing-height26);
+        font-weight: var(--vkl-weight-medium);
+    }
+}
+
+// section title (Home-02)
+.vl-section-title2{
+    & .subtitle{
+        color: var(--vkl-text-text-6);
+        background: var(--vkl-text-text-12);
+        border-radius: 50px;
+        display: inline-block;
+        text-transform: uppercase;
+        padding: 8px 14px;
+        font-size: var(--vkl-font-size-font-s18);
+        line-height: var(--vkl-specing-height18);
+        font-weight: var(--vkl-weight-semibold);
+    }
+    & .title{
+        color: var(--vkl-text-text-6);
+        font-size: var(--vkl-font-size-font-s44);
+        line-height: var(--vkl-specing-height54);
+        font-weight: var(--vkl-weight-semibold);
+        @media #{$md}{
+            font-size: var(--vkl-font-size-font-s30);
+            line-height: var(--vkl-specing-height40);
+        }
+        @media #{$xs}{
+            font-size: var(--vkl-font-size-font-s30);
+            line-height: var(--vkl-specing-height38);
+        }
+    }
+    & .para{
+        color: var(--vkl-text-text-3);
+        font-size: var(--vkl-font-size-font-s18);
+        line-height: var(--vkl-specing-height26);
+        font-weight: var(--vkl-weight-medium);
+    }
+}
+
+// section title (Home-03)
+.vl-section-title3{
+    & .subtitle{
+        color: var(--vkl-text-theme-color-1);
+        background: var(--vkl-text-text-1);
+        border-radius: 8px;
+        display: inline-block;
+        text-transform: uppercase;
+        padding: 8px 14px;
+        font-size: var(--vkl-font-size-font-s18);
+        line-height: var(--vkl-specing-height18);
+        font-weight: var(--vkl-weight-semibold);
+    }
+    & .title{
+        color: var(--vkl-text-text-6);
+        font-size: var(--vkl-font-size-font-s44);
+        line-height: var(--vkl-specing-height54);
+        font-weight: var(--vkl-weight-semibold);
+        @media #{$md}{
+            font-size: var(--vkl-font-size-font-s30);
+            line-height: var(--vkl-specing-height40);
+        }
+        @media #{$xs}{
+            font-size: var(--vkl-font-size-font-s30);
+            line-height: var(--vkl-specing-height38);
+        }
+    }
+    & .para{
+        color: var(--vkl-text-text-18);
+        font-size: var(--vkl-font-size-font-s18);
+        line-height: var(--vkl-specing-height26);
+        font-weight: var(--vkl-weight-medium);
+    }
+}
+
+// section title (Home-04)
+.vl-section-title4{
+    & .subtitle{
+        color: var(--vkl-text-text-20);
+        background: var(--vkl-text-text-24);
+        border-radius: 8px;
+        display: inline-block;
+        text-transform: uppercase;
+        padding: 8px 14px;
+        font-size: var(--vkl-font-size-font-s18);
+        line-height: var(--vkl-specing-height18);
+        font-weight: var(--vkl-weight-semibold);
+    }
+    & .title{
+        color: var(--vkl-text-text-22);
+        font-size: var(--vkl-font-size-font-s44);
+        line-height: var(--vkl-specing-height54);
+        font-weight: var(--vkl-weight-semibold);
+        @media #{$md}{
+            font-size: var(--vkl-font-size-font-s30);
+            line-height: var(--vkl-specing-height40);
+        }
+        @media #{$xs}{
+            font-size: var(--vkl-font-size-font-s30);
+            line-height: var(--vkl-specing-height38);
+        }
+    }
+    & .para{
+        color: var(--vkl-text-text-23);
+        font-size: var(--vkl-font-size-font-s16);
+        line-height: var(--vkl-specing-height24);
+        font-weight: var(--vkl-weight-medium);
+    }
+}

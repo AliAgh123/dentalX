@@ -1,0 +1,89 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  2.12 Counter
+/*----------------------------------------*/
+
+// counter box (Home-1)
+.vl-about-counter-block {
+    margin-top: -104px;
+    @media #{$md}{
+        margin-top: 0;
+    }
+    @media #{$xs}{
+        margin-top: 0;
+    }
+}
+.single-couter-box{
+    display: inline-block;
+    padding-right: 50px;
+    margin-right: 50px;
+    position: relative;
+    z-index: 1;
+    @media #{$xs}{
+        display: block;
+        padding-right: 0;
+        margin-right: 0;
+    }
+    @media #{$md}{
+        padding-right: 43px;
+        margin-right: 43px;
+    }
+    & span{
+        color: var(--vkl-text-text-2);
+        font-size: var(--vkl-font-size-font-s44);
+        line-height: var(--vkl-specing-height44);
+        font-weight: var(--vkl-weight-medium);
+    }
+    & .deseg{
+        color: var(--vkl-text-text-3);
+        font-size: var(--vkl-font-size-font-s18);
+        line-height: var(--vkl-specing-height16);
+        font-weight: var(--vkl-weight-medium);
+    }
+    &::after{
+        position: absolute;
+        content: "";
+        right: 0;
+        top: 0;
+        height: 70px;
+        width: 1px;
+        background: #E7EBED;
+        @media #{$xs}{
+            display: none;
+        }
+    }
+    &:last-child{
+        &::after{
+            display: none;
+        }
+    }
+}
+
+// counter box (Home-3)
+.single-couter-box3{
+    & span{
+        color: var(--vkl-text-text-17);
+        font-size: var(--vkl-font-size-font-s36);
+        line-height: var(--vkl-specing-height36);
+        font-weight: var(--vkl-weight-semibold);
+        display: inline-block;
+        transition: .3s;
+    }
+    & .deseg{
+        color: var(--vkl-text-text-17);
+        font-size: var(--vkl-font-size-font-s18);
+        line-height: var(--vkl-specing-height18);
+        font-weight: var(--vkl-weight-semibold);
+        display: inline-block;
+    }
+    & .para{
+        border-top: 1px solid #E8E8E8;
+        color: var(--vkl-text-text-18);
+        font-size: var(--vkl-font-size-font-s16);
+        line-height: var(--vkl-specing-height24);
+        font-weight: var(--vkl-weight-medium);
+        margin-top: 16px;
+        padding-top: 16px;
+    }
+}

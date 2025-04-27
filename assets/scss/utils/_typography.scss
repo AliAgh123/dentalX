@@ -1,0 +1,468 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: DentalX HTML Template
+    Author: VikingLab
+    Support: vikinglab007@gmail.com
+    Description: DentalX HTML Template
+    Version: 1.0.0
+
+-----------------------------------------------------------------------------------
+
+/************ TABLE OF CONTENTS ***************  
+
+	-----------------
+    01. THEME CSS
+	-----------------
+		1.1 Theme Default
+		1.2 Common Classes
+		1.3 Default Spacing
+		
+	-----------------
+    02. COMPONENTS css
+	-----------------
+		2.1 Back to top
+		2.2 Buttons
+		2.3 Preloader
+		2.4 Pagination
+		2.5 Offcanvas
+		2.6 Breadcrumb
+		2.7 Accordion
+		2.8 Tab
+		2.9 Section Title
+    2.10 Video
+    2.11 Brand
+    2.12 Counter
+		
+		
+	-----------------
+    03. HEADER CSS
+	-----------------
+		3.1 Header Style 1
+
+    ---------------------------------
+	04. MENU CSS
+	---------------------------------
+		4.1 Main menu css
+		4.2 Meanmenu css
+		4.3 Mobile css
+		4.4 Category menu css
+
+	---------------------------------
+	05. BLOG CSS
+	---------------------------------
+		5.1 Sidebar css
+		5.2 Blog css
+
+	---------------------------------
+	06. FOOTER CSS
+	---------------------------------
+		6.1 Footer Style 1
+		6.2 Footer Style 2
+		6.4 Footer Style 4
+	
+	---------------------------------
+	07. PAGES CSS
+	---------------------------------
+		7.1 Banner css
+		7.2 About css
+		7.3 Contact css
+		7.4 Cta css
+		7.5 Error css 
+    7.6 Fact css
+		7.7 Portfolio css
+		7.8 Pricing css
+		7.9 Service css
+		7.10 Team css
+		7.11 Testimonial css
+
+
+*----------------------------------------*/
+
+// font url
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+// font family
+$font-family: (
+    'ff': (
+        'body':  "'Figtree', sans-serif",
+        'heading':"'Figtree', sans-serif",
+        'p': "'Figtree', sans-serif",
+        'fontawesome': '"Font Awesome 6 Pro"'
+    )
+);
+
+
+// font size
+$font-size: (
+    'fz': (
+        'body': 16px,
+        'p': 16px,
+        'heading': 20px,
+    )
+);
+
+a, a:hover{
+    text-decoration: none;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    li{
+        list-style: none;
+    }
+}
+h2,p{
+    margin-bottom: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin-bottom: 0;
+}
+input,textarea{
+    background: none;
+    border: none;
+    outline: none;
+  }
+  
+  img{
+       max-width: 100%;
+       max-height: 100%;
+  }
+  
+$height:(
+     'specing': (
+          'height6': 6px,
+          'height8': 8px,
+          'height10': 10px,
+          'height12': 12px,
+          'height14': 114px,
+          'height16': 16px,
+          'height18': 18px,
+          'height20': 20px,
+          'height22': 22px,
+          'height24': 24px,
+          'height26': 26px,
+          'height28': 28px,
+          'height30': 30px,
+          'height32': 32px,
+          'height34': 34px,
+          'height36': 36px,
+          'height38': 38px,
+          'height40': 40px,
+          'height42': 42px,
+          'height44': 44px,
+          'height46': 46px,
+          'height48': 48px,
+          'height50': 50px,
+          'height52': 52px,
+          'height54': 54px,
+          'height55': 55px,
+          'height56': 56px,
+          'height58': 58px,
+          'height60': 60px,
+          'height64': 64px,
+          'height70': 70px,
+          'height72': 72px,
+          'height80': 80px,
+          'height82': 82px,
+          'height88': 88px,
+          'height90': 90px,
+          'height92': 92px,
+          'height100': 100px,
+          'height110': 110px,
+          'height120': 120px,
+          'height130': 130px,
+          
+     )
+);
+
+
+// animation
+@keyframes animation-5 {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
+  .aniamtion-key-5 {
+    position: relative;
+    animation-name: animation-5;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    // transition: $trans;
+  }
+
+  @keyframes animation-7 {
+    0% {
+      
+      transform:rotate(0) ;
+    }
+
+    100% {
+    
+      transform: rotate(-1000deg);
+    }
+}
+
+.keyframe5 {
+    position: relative;
+    animation-name: animation-7;
+    animation-duration: 90s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.59, 0.59, 1, 1)
+}
+
+@keyframes animation-1 {
+    0% {
+      
+      transform:translateY(0) ;
+    }
+
+    100% {
+    
+      transform: translateY(30px);
+    }
+  }
+
+.aniamtion-key-1 {
+    position: relative;
+    animation-name: animation-1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animation-2 {
+    0% {
+      
+      transform:translateX(0) ;
+    }
+
+    100% {
+    
+      transform: translateX(50px);
+    }
+  }
+
+  .aniamtion-key-2 {
+    position: relative;
+    animation-name: animation-2;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes animation-3 {
+    0% {
+      
+      transform:translateY(0) ;
+    }
+
+    100% {
+    
+      transform: translateY(60px);
+    }
+  }
+
+  .aniamtion-key-3 {
+    position: relative;
+    animation-name: animation-3;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animation-4 {
+    0% {
+      
+      transform:translateY(0) ;
+    }
+
+    100% {
+    
+      transform: translateY(40px);
+    }
+  }
+
+  .aniamtion-key-4 {
+    position: relative;
+    animation-name: animation-4;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes animation-6 {
+    0% {
+      
+      transform:translateY(0) ;
+    }
+
+    100% {
+    
+      transform: translateY(50px);
+    }
+  }
+
+  .aniamtion-key-6 {
+    position: relative;
+    animation-name: animation-6;
+    animation-duration: 1.9s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes animation-8 {
+    0% {
+      
+      padding-left: 0px;
+    }
+
+    100% {
+    
+      padding-left: 50px;
+    }
+  }
+
+  .aniamtion-key-7 {
+    position: relative;
+    animation-name: animation-8;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@-webkit-keyframes fade-in-down {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -50px, 0);
+        transform: translate3d(0, -50px, 0);
+    }
+  
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+  }
+  
+  @keyframes fade-in-down {
+    0% {
+        -webkit-transform: translate3d(0, -50px, 0);
+        transform: translate3d(0, -50px, 0);
+    }
+  
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+  }
+
+  @keyframes pulse-border {
+    0% {
+      transform: translateX(0) translateY(0) translateZ(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(0) translateY(0) translateZ(0) scale(1.5);
+      opacity: 1;
+    }
+  }
+  .pulse-border {
+    position: relative;
+    animation-name: pulse-border;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes infiniteAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.element {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    animation: infiniteAnimation 2s linear infinite;
+}
+
+.circle {
+    animation: rotateCircle 9s linear infinite;
+  }
+@keyframes rotateCircle {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+
+
+
+//   margquee animation //
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translatex(-100%); }
+}
+@keyframes marquee-2 {
+    0% { transform: translateX(-100%); }
+    100% { transform: translatex(0); }
+}
+
+
+.reveal {
+    position: relative;
+    display: -ms-inline-flexbox;
+    visibility: hidden;
+    overflow: hidden;
+  }
+  
+  .reveal img {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    -o-object-fit: cover;
+    object-fit: cover;
+    transform-origin: left;
+  }
+
+
+  .image-anime {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image-anime:after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%) rotate(-45deg);
+    z-index: 1;
+  }
+  
+  .image-anime:hover:after {
+    height: 250%;
+    transition: all 600ms linear;
+    background-color: transparent;
+  }

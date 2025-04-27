@@ -1,0 +1,522 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  7.8 Pricing css
+/*----------------------------------------*/
+
+.vl-pricing-are4a{
+    background: var(--vkl-text-text-22);
+    & .shape1{
+        position: absolute;
+        top: 72px;
+        left: 72px;
+    }
+    & .shape2{
+        position: absolute;
+        top: 338px;
+        left: 23px;
+    }
+    & .shape3{
+        position: absolute;
+        bottom: 9px;
+        left:384px;
+    }
+    & .shape4{
+        position: absolute;
+        top: 250px;
+        right:240px;
+    }
+    & .shape5{
+        position: absolute;
+        top: 480px;
+        right:20px;
+    }
+    & .shape6{
+        position: absolute;
+        bottom: 30px;
+        right:20px;
+    }
+    & .shape7{
+        position: absolute;
+        bottom: 57px;
+        left:20px;
+    }
+    & .shape8{
+        position: absolute;
+        bottom: 6px;
+        left: 70px;
+    }
+}
+
+.vl-pricing-sec-titl4e{
+    & .vl-section-title4{
+        & .subtitle{
+            background: rgba(255, 255, 255, 0.10);
+            color: var(--vkl-text-text-1);
+        }
+        & .title{
+            color: var(--vkl-text-text-1);
+        }
+    }
+}
+
+// pricing box
+.vl-pricie-bo4x{
+    & .vl-pricie-box-price{
+        padding: 30px;
+        display: inline-block;
+        border-radius: 8px;
+        background-repeat: no-repeat;
+        margin-left: 30px;
+        height: 160px;
+        width: 160px;
+        line-height: 30px;
+        padding-top: 36px;
+        position: relative;
+        z-index: 1;
+        & .price{
+            color: var(--vkl-text-text-1);
+            font-size: var(--vkl-font-size-font-s44);
+            line-height: var(--vkl-specing-height44);
+            font-weight: var(--vkl-weight-semibold);
+        }
+        & .month{
+            color: rgba(255, 255, 255, 0.80);
+            font-size: var(--vkl-font-size-font-s16);
+            line-height: var(--vkl-specing-height16);
+            font-weight: var(--vkl-weight-medium);
+            display: inline-block;
+            padding-top: 14px;
+        }
+    }
+    & .vl-single-pricing-box{
+        background: var(--vkl-text-text-1);
+        transition: .3s;
+        border-radius: 8px;
+        padding: 32px;
+        padding-top: 108px;
+        margin-top: -85px;
+        position: relative;
+        & .vl-pricing-box-content{
+            border-bottom: 1px solid var(--vkl-text-text-25);
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            & .sub-title{
+                color: var(--vkl-text-text-23);
+                font-size: var(--vkl-font-size-font-s18);
+                line-height: var(--vkl-specing-height18);
+                font-weight: var(--vkl-weight-medium);
+            }
+            & .title{
+                color: var(--vkl-text-text-22);
+                font-size: var(--vkl-font-size-font-s32);
+                line-height: var(--vkl-specing-height32);
+                font-weight: var(--vkl-weight-semibold);
+            }
+            
+        }
+        & .vl-pricing-list{
+            & ul{
+                & li{
+                    color: var(--vkl-text-text-22);
+                    font-size: var(--vkl-font-size-font-s16);
+                    line-height: var(--vkl-specing-height16);
+                    font-weight: var(--vkl-weight-medium);
+                    margin-bottom: 16px;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                    & span{
+                        background: var(--vkl-text-text-20);
+                        color: var(--vkl-text-text-1);
+                        height: 20px;
+                        width: 20px;
+                        line-height: 20px;
+                        border-radius: 50px;
+                        margin-right: 4px;
+                        display: inline-block;
+                        font-size: 12px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    &.active{
+        & .vl-pricie-box-price{
+            & .price{
+                color: var(--vkl-text-text-22);
+            }
+            & .month{
+                color: var(--vkl-text-text-23);
+            }
+        }
+        & .vl-single-pricing-box{
+            background: var(--vkl-text-text-20);
+            transition: .3s;
+            border-radius: 8px;
+            padding: 32px;
+            padding-top: 108px;
+            margin-top: -85px;
+            & .vl-pricing-box-content{
+                border-bottom: 1px solid #3BC7A2;
+                padding-bottom: 20px;
+                margin-bottom: 20px;
+                & .sub-title{
+                    color: var(--vkl-text-text-1);
+                }
+                & .title{
+                    color: var(--vkl-text-text-1);
+                }
+                
+            }
+            & .vl-pricing-list{
+                & ul{
+                    & li{
+                        color: #D3F3EA;
+                        font-size: var(--vkl-font-size-font-s16);
+                        line-height: var(--vkl-specing-height16);
+                        font-weight: var(--vkl-weight-medium);
+                        margin-bottom: 16px;
+                        &:last-child{
+                            margin-bottom: 0;
+                        }
+                        & span{
+                            background: var(--vkl-text-text-1);
+                            color: var(--vkl-text-text-20);
+                        }
+                    }
+                }
+            }
+            & .vl-pricing-btn{
+                & .vl-btn-primar4y{
+                    background: var(--vkl-text-text-1);
+                    color: var(--vkl-text-text-20);
+                    transition: .3s;
+                    &:hover{
+                        background: var(--vkl-text-text-22);
+                        color: var(--vkl-text-text-1);
+                        transition: .3s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// pricing box (pricing box-1)
+.vl-pricie-bo4x-iner{
+    & .vl-pricie-box-price{
+        padding: 30px;
+        display: inline-block;
+        border-radius: 8px;
+        background-repeat: no-repeat;
+        margin-left: 30px;
+        height: 160px;
+        width: 160px;
+        line-height: 30px;
+        padding-top: 36px;
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        & .price{
+            color: var(--vkl-text-text-1);
+            font-size: var(--vkl-font-size-font-s40);
+            line-height: var(--vkl-specing-height40);
+            font-weight: var(--vkl-weight-semibold);
+        }
+        & .month{
+            color: rgba(255, 255, 255, 0.80);
+            font-size: var(--vkl-font-size-font-s16);
+            line-height: var(--vkl-specing-height16);
+            font-weight: var(--vkl-weight-medium);
+            display: inline-block;
+            padding-top: 14px;
+        }
+    }
+    & .vl-single-pricing-box{
+        background: var(--vkl-bg-bg-2);
+        border: 1px solid rgba(14, 55, 74, 0.05);
+        transition: .3s;
+        border-radius: 8px;
+        padding: 32px;
+        padding-top: 108px;
+        margin-top: -85px;
+        position: relative;
+        & .vl-pricing-box-content{
+            border-bottom: 1px solid #D9E2E5;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            & .sub-title{
+                color: var(--vkl-text-text-23);
+                font-size: var(--vkl-font-size-font-s18);
+                line-height: var(--vkl-specing-height18);
+                font-weight: var(--vkl-weight-medium);
+            }
+            & .title{
+                color: var(--vkl-text-text-2);
+                font-size: var(--vkl-font-size-font-s32);
+                line-height: var(--vkl-specing-height32);
+                font-weight: var(--vkl-weight-semibold);
+            }
+            
+        }
+        & .vl-pricing-list{
+            & ul{
+                & li{
+                    color: #3C5D6C;
+                    font-size: var(--vkl-font-size-font-s16);
+                    line-height: var(--vkl-specing-height16);
+                    font-weight: var(--vkl-weight-medium);
+                    margin-bottom: 16px;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                    & span{
+                        background: var(--vkl-text-theme-color-1);
+                        color: var(--vkl-text-text-1);
+                        height: 20px;
+                        width: 20px;
+                        line-height: 20px;
+                        border-radius: 50px;
+                        margin-right: 4px;
+                        display: inline-block;
+                        font-size: 12px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    &.active{
+        & .vl-pricie-box-price{
+            & .price{
+                color: var(--vkl-text-text-2);
+            }
+            & .month{
+                color: var(--vkl-text-text-3);
+            }
+        }
+        & .vl-single-pricing-box{
+            background: var(--vkl-text-theme-color-1);
+            transition: .3s;
+            border-radius: 8px;
+            padding: 32px;
+            padding-top: 108px;
+            margin-top: -85px;
+            & .vl-pricing-box-content{
+                border-bottom: 1px solid #3C9FCD;
+                padding-bottom: 20px;
+                margin-bottom: 20px;
+                & .sub-title{
+                    color: var(--vkl-text-text-1);
+                }
+                & .title{
+                    color: var(--vkl-text-text-1);
+                }
+                
+            }
+            & .vl-pricing-list{
+                & ul{
+                    & li{
+                        color: #D3E9F4;
+                        font-size: var(--vkl-font-size-font-s16);
+                        line-height: var(--vkl-specing-height16);
+                        font-weight: var(--vkl-weight-medium);
+                        margin-bottom: 16px;
+                        &:last-child{
+                            margin-bottom: 0;
+                        }
+                        & span{
+                            background: var(--vkl-text-text-1);
+                            color: var(--vkl-text-theme-color-1);
+                        }
+                    }
+                }
+            }
+            & .vl-pricing-btn{
+                & .vl-btn-primary{
+                    background: var(--vkl-text-text-1);
+                    color: var(--vkl-text-theme-color-1);
+                    transition: .3s;
+                    &:hover{
+                        background: var(--vkl-text-text-2);
+                        color: var(--vkl-text-text-1);
+                        transition: .3s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// pricing box (pricing box-2)
+.vl-pricie-bo4x-ine2r{
+    border: 1px solid rgba(14, 55, 74, 0.10);
+    border-radius: 8px;
+    padding: 50px 32px;
+    & .vl-pricie-box-price{
+        padding: 30px;
+        display: inline-block;
+        border-radius: 8px;
+        background-repeat: no-repeat;
+        height: 160px;
+        width: 160px;
+        line-height: 30px;
+        padding-top: 36px;
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        & .price{
+            color: var(--vkl-text-text-1);
+            font-size: var(--vkl-font-size-font-s40);
+            line-height: var(--vkl-specing-height40);
+            font-weight: var(--vkl-weight-semibold);
+        }
+        & .month{
+            color: rgba(255, 255, 255, 0.80);
+            font-size: var(--vkl-font-size-font-s16);
+            line-height: var(--vkl-specing-height16);
+            font-weight: var(--vkl-weight-medium);
+            display: inline-block;
+            padding-top: 14px;
+        }
+    }
+    & .vl-single-pricing-box{
+        & .vl-pricing-box-content{
+            border-bottom: 1px solid #D9E2E5;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            & .sub-title{
+                color: var(--vkl-text-text-23);
+                font-size: var(--vkl-font-size-font-s18);
+                line-height: var(--vkl-specing-height18);
+                font-weight: var(--vkl-weight-medium);
+            }
+            & .title{
+                color: var(--vkl-text-text-2);
+                font-size: var(--vkl-font-size-font-s32);
+                line-height: var(--vkl-specing-height32);
+                font-weight: var(--vkl-weight-semibold);
+            }
+            
+        }
+        & .vl-pricing-list{
+            & ul{
+                & li{
+                    color: #3C5D6C;
+                    font-size: var(--vkl-font-size-font-s16);
+                    line-height: var(--vkl-specing-height16);
+                    font-weight: var(--vkl-weight-medium);
+                    margin-bottom: 22px;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                    & span{
+                        background: var(--vkl-text-theme-color-1);
+                        color: var(--vkl-text-text-1);
+                        height: 20px;
+                        width: 20px;
+                        line-height: 20px;
+                        border-radius: 50px;
+                        margin-right: 4px;
+                        display: inline-block;
+                        font-size: 12px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    &.active{
+        background: var(--vkl-text-theme-color-1);
+        padding: 49px 32px;
+        & .vl-pricie-box-price{
+            & .price{
+                color: var(--vkl-text-text-2);
+            }
+            & .month{
+                color: var(--vkl-text-text-3);
+            }
+        }
+        .vl-pricinb-bo2x-heading .vl-pricing-box-content{
+            .sub-title{
+                color: rgba(255, 255, 255, 0.90);
+            }
+            .title{
+                color: var(--vkl-text-text-1);
+            }
+        }
+        & .vl-single-pricing-box{
+            transition: .3s;
+            border-radius: 8px;
+            & .vl-pricing-box-content{
+                border-bottom: 1px solid #3C9FCD;
+                padding-bottom: 20px;
+                margin-bottom: 20px;
+                & .sub-title{
+                    color: var(--vkl-text-text-1);
+                }
+                & .title{
+                    color: var(--vkl-text-text-1);
+                }
+                
+            }
+            & .vl-pricing-list{
+                & ul{
+                    & li{
+                        color: #D3E9F4;
+                        font-size: var(--vkl-font-size-font-s16);
+                        line-height: var(--vkl-specing-height16);
+                        font-weight: var(--vkl-weight-medium);
+                        &:last-child{
+                            margin-bottom: 0;
+                        }
+                        & span{
+                            background: var(--vkl-text-text-1);
+                            color: var(--vkl-text-theme-color-1);
+                        }
+                    }
+                }
+            }
+            
+        }
+        & .vl-pricing-btn{
+            & .vl-btn-primary{
+                background: var(--vkl-text-text-1);
+                color: var(--vkl-text-theme-color-1);
+                transition: .3s;
+                &:hover{
+                    background: var(--vkl-text-text-2);
+                    color: var(--vkl-text-text-1);
+                    transition: .3s;
+                }
+            }
+        }
+    }
+}
+
+.vl-pricinb-bo2x-heading{
+    @media #{$md,$xs}{
+        margin-bottom: 20px;
+    }
+    & .vl-pricing-box-content{
+        & .sub-title{
+            color: var(--vkl-text-text-23);
+            font-size: var(--vkl-font-size-font-s18);
+            line-height: var(--vkl-specing-height18);
+            font-weight: var(--vkl-weight-medium);
+        }
+        & .title{
+            color: var(--vkl-text-text-2);
+            font-size: var(--vkl-font-size-font-s32);
+            line-height: var(--vkl-specing-height32);
+            font-weight: var(--vkl-weight-semibold);
+        }
+        
+    }
+}
+.vl-pricinb-bo2x-heading .vl-pricie-box-price {
+    margin-left: -10px;
+}

@@ -1,0 +1,340 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  2.8 Tab
+/*----------------------------------------*/
+
+.vl-work-tab{
+    & .vl-tab-icon-box{
+        background: var(--vkl-bg-bg-2);
+        border-radius: 8px;
+        padding: 32px 24px;
+        display: flex;
+        margin-bottom: 20px;
+        @media #{$xs}{
+            display: block;
+        }
+        & .workicon{
+           & span.icon{
+             background:var(--vkl-text-text-8);
+             height: 60px;
+             width: 60px;
+             line-height: 60px;
+             text-align: center;
+             display: inline-block;
+             border-radius: 50px;
+             margin-right: 16px;
+             transition: .3s;
+             & img{
+              filter: brightness(.5);
+             }
+           }
+        }
+        & .content{
+          & .title{
+              color: var(--vkl-text-text-2);
+              font-size: var(--vkl-font-size-font-s24);
+              line-height: var(--vkl-specing-height24);
+              font-weight: var(--vkl-weight-semibold);
+              transition: .3s;
+              @media #{$xs}{
+                margin-top: 20px;
+                line-height: var(--vkl-specing-height28);
+             }
+            }
+            & .para{
+              color: var(--vkl-text-text-3);
+              font-size: var(--vkl-font-size-font-s16);
+              line-height: var(--vkl-specing-height24);
+              font-weight: var(--vkl-weight-medium);
+              transition: .3s;
+            }
+        }
+      }
+    & .nav-link{
+      padding: inherit;
+    }
+    .nav-pills .nav-link.active .vl-tab-icon-box {
+      background:var(--vkl-text-theme-color-1);
+      & .workicon{
+        & span.icon{
+          background: var(--vkl-text-text-1);
+          transition: .3s;
+          & img{
+           filter: none;
+          }
+        }
+     }
+      & .content{
+        & .title{
+            color: var(--vkl-text-text-1);
+            transition: .3s;
+          }
+          & .para{
+            color: var(--vkl-text-text-9);
+            transition: .3s;
+          }
+      }
+    }
+    .nav-pills .nav-link.active{
+      background: transparent;
+    }
+}
+
+.vl-tab-content-block{
+  padding-left: 22px;
+  position: relative;
+  @media #{$md,$xs}{
+    padding-left: 0;
+  }
+  & .shape{
+    & img{
+      position: absolute;
+      bottom: -70px;
+      left: -50px;
+      z-index: 1;
+      @media #{$md}{
+        z-index: -1;
+      }
+      @media #{$xs}{
+        z-index: -1;
+      }
+    }
+  }
+  & .vl-tab-thumb{
+    & img{
+      height: 598px;
+      object-fit: cover;
+      @media #{$md,$xs}{
+        height: 100%;   
+      }
+    }
+  }
+}
+
+
+// Tab Style Home 2
+
+.vl-work-tab2{
+  position: relative;
+  &::after{
+    position: absolute;
+    content: "";
+    left: -30px;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background: #0C3226;
+    @media #{$md}{
+      left: -20px;
+    }
+  }
+  & .vl-tab-icon-box{
+      background: var(--vkl-bg-bg-6);
+      border-radius: 30px;
+      padding: 32px 24px;
+      display: flex;
+      margin-bottom: 20px;
+      @media #{$xs}{
+          display: block;
+      }
+      & .workicon{
+         & span.icon{
+           background:var(--vkl-text-text-8);
+           height: 60px;
+           width: 60px;
+           line-height: 60px;
+           text-align: center;
+           display: inline-block;
+           border-radius: 50px;
+           margin-right: 16px;
+           transition: .3s;
+           & img{
+            filter: brightness(.5);
+           }
+         }
+      }
+      & .content{
+        & .title{
+            color: var(--vkl-text-text-2);
+            font-size: var(--vkl-font-size-font-s24);
+            line-height: var(--vkl-specing-height24);
+            font-weight: var(--vkl-weight-semibold);
+            transition: .3s;
+            @media #{$xs}{
+              margin-top: 20px;
+              line-height: var(--vkl-specing-height28);
+           }
+          }
+          & .para{
+            color: var(--vkl-text-text-3);
+            font-size: var(--vkl-font-size-font-s16);
+            line-height: var(--vkl-specing-height24);
+            font-weight: var(--vkl-weight-medium);
+            transition: .3s;
+          }
+      }
+    }
+  & .nav-link{
+    padding: inherit;
+  }
+  .nav-pills .nav-link.active .vl-tab-icon-box {
+    background:var(--vkl-text-theme-color-2);
+    position: relative;
+    z-index: 1;
+    & .workicon{
+      & span.icon{
+        background: var(--vkl-text-text-1);
+        transition: .3s;
+        & img{
+         filter: none;
+        }
+      }
+   }
+    & .content{
+      & .title{
+          color: var(--vkl-text-text-6);
+          transition: .3s;
+        }
+        & .para{
+          color: var(--vkl-text-text-7);
+          transition: .3s;
+        }
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      height: 172px;
+      width: 4px;
+      background:var(--vkl-text-theme-color-2);
+      top: 0;
+      left: -30px;
+      @media #{$md}{
+        left: -20px;
+      }
+  }
+  }
+  .nav-pills .nav-link.active{
+    background: transparent;
+    position: relative;
+  }
+
+
+}
+
+
+// Tab Style Inner Page (About Page)
+
+.vl-tab-heading-content{
+  border-top: 1px solid #E7EBED;
+  & .tab-title{
+      color: var(--vkl-text-text-2);
+      font-size: var(--vkl-font-size-font-s22);
+      line-height: var(--vkl-specing-height20);
+      font-weight: var(--vkl-weight-medium);
+      padding-top: 20px;
+      display: inline-block;
+  }
+  & .nav-link{
+    padding: inherit;
+    padding-right: 50px;
+  }
+  & .nav-pills .nav-link.active{
+    background: transparent;
+    position: relative;
+    z-index: 1;
+    & .tab-title{
+      color: var(--vkl-text-theme-color-1);
+      border-bottom: 1px solid var(--vkl-text-theme-color-1);
+      &::after{
+        position: absolute;
+        content: "";
+        height: 1px;
+        width: 100%;
+        left: 0;
+        top: -1px;
+        background: var(--vkl-text-theme-color-1);
+      }
+  }
+  }
+}
+
+.vl-tab-content{
+  & .para{
+    font-size: var(--vkl-font-size-font-s18);
+    line-height: var(--vkl-specing-height28);
+    font-weight: var(--vkl-weight-medium);
+    color: var(--vkl-text-text-3);
+    & span{
+      color: var(--vkl-text-text-2);
+      font-size: var(--vkl-font-size-font-s18);
+      line-height: var(--vkl-specing-height28);
+      font-weight: var(--vkl-weight-bold);
+    } 
+  }
+}
+
+// mission thumbnail 
+
+.vl-mission-iner-thumb{
+  position: relative;
+  z-index: 1;
+  .vl-mission-thumb-iner{
+    margin-right: 70px;
+    @media #{$xs}{
+      margin-right: 0;
+    }
+    & img{
+      height: 500px;
+      object-fit: cover;
+      border-radius: 8px;
+      @media #{$xs}{
+        height: 100%;
+      }
+    }
+  }
+  & .vl-tab-counter-box{
+    background: var(--vkl-text-text-2);
+    border-radius: 8px;
+    padding: 32px 28px;
+    position: absolute;
+    right: 0;
+    top: -60px;
+    width: 220px;
+    @media #{$xs}{
+      position: relative;
+      top: 0;
+      width: 100%;
+      margin-top: 30px;
+    }
+    & .vl-icon{
+      & span{
+        background: var(--vkl-text-theme-color-1);
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+        text-align: center;
+        display: inline-block;
+        border-radius: 50px;
+
+      }
+    }
+    & .vl-counter-content{
+      & span{
+        color: var(--vkl-text-text-1);
+        font-size: var(--vkl-font-size-font-s44);
+        line-height: var(--vkl-specing-height44);
+        font-weight: var(--vkl-weight-semibold);
+        margin-top: 20px;
+        display: inline-block;
+      }
+      & .deseg{
+        color: rgba(255, 255, 255, 0.80);
+        font-size: var(--vkl-font-size-font-s18);
+        line-height: var(--vkl-specing-height16);
+        font-weight: var(--vkl-weight-medium);
+      }
+    }
+  }
+}
+
